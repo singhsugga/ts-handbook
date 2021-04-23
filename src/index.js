@@ -35,11 +35,21 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
+var add = function (var1, var2, ConvTarget) {
+    var result;
+    if (typeof var1 === "number" && typeof var2 === "number" || ConvTarget === "as-number") {
+        result = +var1 + +var2;
+        if (result === "NaN")
+            throw new Error("variables you passed are not valid numbers");
+    }
+    else {
+        result = var1.toString() + var2.toString();
+    }
+    return result;
+};
 (function () { return __awaiter(_this, void 0, void 0, function () {
-    var add;
     return __generator(this, function (_a) {
-        add = function (n1, n2) { return n1 + n2; };
-        console.log(add(1, 2));
+        console.log(add(1, 2, "as-number"));
         return [2 /*return*/];
     });
 }); })();

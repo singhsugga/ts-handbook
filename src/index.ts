@@ -1,5 +1,16 @@
+type Combinable = number | string;
+type ConversionType = "as-number"| "as-string";
+
+const add = (var1: Combinable ,var2:Combinable,ConvTarget : ConversionType)=> {
+    let result:any;
+    if(typeof var1 === "number" && typeof var2 === "number"  || ConvTarget === "as-number") {
+        result = +var1 + +var2;
+        if(result === "NaN") throw new Error("variables you passed are not valid numbers")
+    }else{
+        result = var1.toString() + var2.toString();
+    }
+    return result
+}
 (async()=>{
-    const add = (n1:number,n2:number)=> n1+n2;
-    console.log(add(1,2));
-    
+    console.log(add(1,2,"as-number"));
 })();
