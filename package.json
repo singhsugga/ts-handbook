@@ -1,0 +1,19 @@
+{
+  "name": "scratchpad",
+  "version": "1.0.0",
+  "description": "TypeScript PlayGround",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "cd src && tsc index.ts && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wassef911/ScratchPad.git"
+  },
+  "author": "wassef ben ahmed",
+  "license": "MIT ",
+  "bugs": {
+    "url": "https://github.com/wassef911/ScratchPad/issues"
+  },
+  "homepage": "https://github.com/wassef911/ScratchPad#readme"
+}
