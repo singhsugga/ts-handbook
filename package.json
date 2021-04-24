@@ -4,7 +4,8 @@
   "description": "TypeScript PlayGround",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "cd src && tsc index.ts && node index.js"
+    "dev": "cd src && tsc index.ts && node index.js",
+    "doc": "jsdoc -c jsdoc.json "
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/wassef911/ScratchPad/issues"
   },
-  "homepage": "https://github.com/wassef911/ScratchPad#readme"
+  "homepage": "https://github.com/wassef911/ScratchPad#readme",
+  "dependencies": {
+    "jsdoc": "^3.6.6",
+    "jsdocs": "^1.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "jsdoc-plugin-typescript": "^2.0.6",
+    "typescript": "^4.2.4"
+  }
 }

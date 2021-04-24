@@ -1,0 +1,19 @@
+{
+  "source": {
+    "include": ["src"],
+    "includePattern": ".js$",
+    "excludePattern": "(node_modules/|docs)"
+  },
+  "typescript": {
+    "moduleRoot": "src"
+  },
+  "plugins": ["plugins/markdown", "jsdoc-plugin-typescript"],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true
+  },
+  "opts": {
+    "recurse": true,
+    "destination": "./docs/"
+  }
+}
