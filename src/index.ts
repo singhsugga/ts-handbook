@@ -1,9 +1,8 @@
-
-
 type Combinable = number | string;
 type ConversionType = "as-number" | "as-string";
+
 /**
- * 
+ * combine two variables 
  * @param {number} var1 first value to combine 
  * @param {number} var2 first value to combine 
  * @param {number} ConvTarget a type to convert result to 
@@ -19,14 +18,8 @@ const add = (var1: Combinable, var2: Combinable, ConvTarget: ConversionType) => 
     }
     return result
 }
+
 (async () => {
     console.log(add(1, 2, "as-number"));
 })();
 
-/**
- * @type {{task:string , done:boolean}}
- */
-const todo = {
-    task: "do stuff",
-    done: true
-}

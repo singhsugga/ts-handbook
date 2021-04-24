@@ -1,3 +1,4 @@
+"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -34,7 +35,13 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var _this = this;
+/**
+ * combine two variables
+ * @param {number} var1 first value to combine
+ * @param {number} var2 first value to combine
+ * @param {number} ConvTarget a type to convert result to
+ * @returns {number | string}
+ */
 var add = function (var1, var2, ConvTarget) {
     var result;
     if (typeof var1 === "number" && typeof var2 === "number" || ConvTarget === "as-number") {
@@ -47,9 +54,9 @@ var add = function (var1, var2, ConvTarget) {
     }
     return result;
 };
-(function () { return __awaiter(_this, void 0, void 0, function () {
+(function () { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
-        console.log(add(1, 2, "as-number"));
+        console.log(add(1, 2, "as-string"));
         return [2 /*return*/];
     });
 }); })();
