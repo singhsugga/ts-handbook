@@ -4,7 +4,7 @@
   "description": "TypeScript PlayGround",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "tsc && node src/index.js",
+    "dev": "tsc --watch",
     "doc": "jsdoc -c jsdoc.json "
   },
   "repository": {
