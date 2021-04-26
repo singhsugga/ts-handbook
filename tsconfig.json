@@ -1,22 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "target": "ES2018",
     "allowJs": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "resolveJsonModule": true,
-    "declaration": false,
-    "outDir": "dist/",
-    "noEmit": true, // for testing 
-    "lib": [
-      "es7",
-      "dom"
-    ]
+    "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */,
+    "strict": true /* Enable all strict type-checking options. */,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "outDir": "dist",
+    "declaration": true,
+    "jsx": "react",
+    "moduleResolution": "Node"
   },
-  "exclude": ["node_modules"],
-  "include": [
-    "src/"
-  ]
+  "include": ["src"]
 }
