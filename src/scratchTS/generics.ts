@@ -24,3 +24,37 @@ interface KeyPair<T, U> {
 }
 let kv1: KeyPair<number, string> = { key: 1, process: (a: number, b: number) => "text" }; // OK
 
+/* ------------------------Generic Interface as function types------------------------- */
+
+interface KeyValueValueProcessor<T, U> {
+    (key: T, val: U): void;
+}
+function processNumKeyPairs<T, U>(key: T, value: U): void {
+    console.log(key, value);
+}
+
+let numKVProcessor: KeyValueValueProcessor<number, number> = processNumKeyPairs;
+numKVProcessor(1, 123);
+/* ----------------------------------------------------------- */
+interface IKeyValueProcessor<T, U> { process(key: T, val: U): void; };
+class kvProcessor implements IKeyValueProcessor<number, string>
+{
+    process = (key: number, val: string): void => console.log(key, val);
+}
+let proc: IKeyValueProcessor<number, string> = new kvProcessor();
+proc.process(1, 'Bill'); //Output: processKeyPairs: key = 1, value = Bill 
+
+/* ------------------------ Generic Class ------------------------- */
+
+class KeyValuePair<T, U>{
+    private key: T;
+    private value: U;
+    constructor(key: T, value: U) {
+        this.value = value;
+        this.key = key;
+    }
+    log = (): void => console.log(this.key, this.value);
+}
+
+let kvp1 = new KeyValuePair<number, string>(1, "");
+kvp1.log();
