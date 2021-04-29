@@ -1,11 +1,7 @@
 {
-<<<<<<< HEAD
   "name": "scratchpad",
   "version": "1.0.0",
   "description": "a playground to try stuff",
-  "scripts": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wassef911/ScratchPad.git"
@@ -15,9 +11,7 @@
   "bugs": {
     "url": "https://github.com/wassef911/ScratchPad/issues"
   },
-  "homepage": "https://github.com/wassef911/ScratchPad#readme"
-}
-=======
+  "homepage": "https://github.com/wassef911/ScratchPad#readme",
   "scripts": {
     "build": "parcel build index.html",
     "dev": "node ./server/index.js",
@@ -80,12 +74,6 @@
     "json-server": "^0.16.2",
     "parcel-bundler": "^1.12.4"
   },
-  "name": "professional-ts",
-  "version": "1.1.0",
-  "description": "Mike's \"professional TypeScript\" course",
-  "repository": "https://github.com/mike-north/professional-ts",
-  "author": "Mike North <michael.l.north@gmail.com>",
-  "license": "BSD-2-Clause",
   "private": true,
   "jest": {
     "verbose": true,
@@ -100,4 +88,3 @@
     "node-forge": "^0.10.0"
   }
 }
->>>>>>> bat7a_TS
