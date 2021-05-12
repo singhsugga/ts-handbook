@@ -8,6 +8,7 @@
     "build": "tsc",
     "dev": "yarn build --watch --preserveWatchOutput",
     "lint": "eslint src --ext js,ts",
+    "docs":"yarn api-documenter markdown -i temp -o docs",
     "test": "jest"
   },
   "devDependencies": {
