@@ -17,3 +17,4 @@ describe('sum3 should calculate a sum properly', () => {
         expect(sum3(3, -4, -5)).toBe(-6);
     });
 });
+
