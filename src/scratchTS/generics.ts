@@ -5,8 +5,8 @@ let myStrArr = getArray<string>(["Hello", "World"]);
 
 myNumArr.push(400); // OK
 myStrArr.push("Hello TypeScript"); // OK
-myNumArr.push("Hi"); // Compiler Error
-myStrArr.push(500); // Compiler Error
+//myNumArr.push("Hi"); // Compiler Error
+//myStrArr.push(500); // Compiler Error
 
 /* ------------------------Multiple Type Variables------------------------- */
 
