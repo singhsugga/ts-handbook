@@ -9,6 +9,6 @@ const assertIsError = (err: any): asserts err is Error => {
 try {
     somethingReskhy();
 } catch (err: unknown) {
-    assertIsError(err);
+    //assertIsError(err);
     console.log(err);
 }

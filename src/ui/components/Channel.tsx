@@ -10,7 +10,7 @@ import Loading from './Loading';
 const Channel:React.FunctionComponent<any> = ({
   channel,
 }) => {
-  const [messages, setMessages] = React.useState();
+  const [messages, setMessages] = React.useState<any[]>();
   useAsyncDataEffect(
     () => getChannelMessages(channel.teamId, channel.id),
     {

@@ -29,7 +29,9 @@ export default class HTTPError extends Error {
    *
    * @param info
    * @param message
-   */
+   * @param kind
+  */
+  private kind: HTTPErrorKind;
   constructor(info: Response, message: string) {
     super(
       `HTTPError [status: ${info.statusText} (${info.status})]\n${message}`,
