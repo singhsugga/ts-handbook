@@ -1,2 +1,1 @@
-# ScratchPad
-a playground to try stuff
+### my typescript handbook
